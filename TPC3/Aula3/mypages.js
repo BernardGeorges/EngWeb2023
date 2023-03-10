@@ -178,7 +178,19 @@ exports.genPersonPage = function(lista,data){
                     <h1>${lista.nome}</h1>
                 </header>
                 <div class="container">
-                    <p> to be continued </p>
+                <p><div>Idade: </div> ${lista.idade}</p>
+                <p><div class="w3-indigo">Sexo:</div>${lista.sexo}</p>
+                <p><div class="w3-indigo">Morada: </div>${lista.morada.cidade}, ${lista.morada.distrito}</p>
+                <p><div class="w3-indigo">BI: </div>${lista.BI}</p>
+                <p><div class="w3-indigo">Profissao: </div>${lista.profissao}</p>
+                <p><div class="w3-indigo">Partido Politico: </div>${lista.partido_politico.party_name}</p>
+                <p><div class="w3-indigo">Religião: </div>${lista.religiao}</p>
+                <p><div class="w3-indigo">Desportos: </div>${lista.desportos}</p>
+                <p><div class="w3-indigo">Animais: </div>${lista.animais}</p>
+                <p><div class="w3-indigo">Figura Publica: </div>${lista.figura_publica_pt}</p>
+                <p><div class="w3-indigo">Marca do Carro: </div>${lista.marca_carro}</p>
+                <p><div class="w3-indigo">Destinos Favoritos: </div>${lista.destinos_favoritos}</p>
+                <p><div class="w3-indigo">Atributos: </div>${lista.atributos}</p>
                 </div>      
                 <footer class="w3-container w3-blue">
                     <h5>Generated in EngWeb 2023 ${data}</h5>
