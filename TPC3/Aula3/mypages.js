@@ -249,11 +249,10 @@ exports.genIndexPage = function(data){
 }
 
 exports.genEspecificDesportoPage = function(lista,desporto,data){
-    espace = desporto.match(/(\w+)%20(\w)/)
-    console.log(espace)
+    desportoTrue = decodeURI(desporto)
     dataFiltered = []
     for(let i=0; i<lista.length; i++){
-        if(lista[i].desportos.includes(desporto)){
+        if(lista[i].desportos.includes(desportoTrue)){
             dataFiltered.push(lista[i])
         } 
     }   
