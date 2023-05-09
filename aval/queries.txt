@@ -1,0 +1,17 @@
+Query:
+    db.stats().objects 
+
+Query:
+    db.exames.countDocuments({resultado : true})
+
+Query:
+    db.exames.aggregate([{$group: {_id:"$género", count: {$sum: 1}}}])
+
+Query:
+    db.exames.aggregate([{$group: {_id:"$modalidade", count: {$sum: 1}}}])
+
+Query:
+    db.exames.count({clube : "GDGoma", federado: true })
+
+Query: 
+    db.exames.count({género : "F" , modalidade: "Triatlo" })
